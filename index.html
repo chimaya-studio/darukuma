@@ -24,6 +24,8 @@ header{
 }
 
 header::after{
+  content:"";
+  position:absolute;
   right:-100px;
   top:120px;
 
@@ -32,6 +34,7 @@ header::after{
 
   background:#d7b7a1;
   border-radius:55% 0 0 55%;
+  z-index:0;
 }
 
 nav,
@@ -239,7 +242,7 @@ footer{
     text-align:center;
     padding-top:48px;
   }
-  h1{font-size:56px
+  h1{font-size:56px;
      white-space:normal;
   }
   .hero-img img{
