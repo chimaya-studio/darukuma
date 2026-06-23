@@ -19,16 +19,20 @@ body{
 header{
   position:relative;
   overflow:hidden;
-  padding:28px 7% 80px;
+  padding:28px 7% 120px;
   background:#f7efe7;
 }
 
 header::after{
+  content:"";
+  position:absolute;
   right:-220px;
   top:120px;
-
   width:850px;
   height:620px;
+  background:#d7b7a1;
+  border-radius:55% 0 0 55%;
+  z-index:0;
 }
 
 nav,
@@ -156,8 +160,10 @@ h1{
 
 main{
   max-width:1120px;
-  margin:-55px auto 0;
+  margin:-20px auto 0;
   padding:0 22px 70px;
+  position:relative;
+  z-index:3;
 }
 
 .card{
