@@ -24,18 +24,14 @@ header{
 }
 
 header::after{
-  content:"";
-  position:absolute;
-  right:-150px;
-  top:100px;
+  right:-100px;
+  top:120px;
 
-  width:900px;
-  height:700px;
+  width:750px;
+  height:600px;
 
   background:#d7b7a1;
-
   border-radius:55% 0 0 55%;
-  z-index:0;
 }
 
 nav,
@@ -64,10 +60,10 @@ nav{
 
 .hero{
   display:grid;
-  grid-template-columns:40% 60%;
+  grid-template-columns:45% 55%;
   align-items:center;
-  gap:20px;
-  padding-top:70px;
+  gap:0;
+  padding-top:50px;
 }
 
 .badge{
@@ -134,11 +130,20 @@ h1{
 
 .hero-img img{
   width:100%;
-  max-width:700px;
-  transform:translateX(20px);
+  max-width:900px;
+
+  transform:
+    translateX(40px)
+    translateY(10px);
+
   display:block;
   margin:auto;
-  mix-blend-mode:multiply;
+}
+
+.main-bear{
+  width:130%;
+  max-width:none;
+  margin-left:-60px;
 }
 
 main{
@@ -273,7 +278,7 @@ footer{
     </div>
 
     <div class="hero-img">
-      <img src="images/mein.png" alt="だるくま。">
+      <img src="images/mein.png" alt="だるくま。" class="main-bear">
     </div>
   </section>
 </header>
@@ -321,7 +326,7 @@ footer{
       <p>
         ちまや<br>
         オリジナルキャラクター「だるくま。」を制作しています。
-        今後シリーズ化していく予定です。
+        今後はシリーズ化していく予定です。
       </p>
     </div>
   </div>
