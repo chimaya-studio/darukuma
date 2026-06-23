@@ -46,6 +46,8 @@ nav{
   justify-content:space-between;
   align-items:center;
   font-weight:bold;
+  position:relative;
+  z-index:10001;
 }
 
 .logo{
@@ -254,34 +256,44 @@ footer{
 
 @media(max-width:850px){
   .menu-button{
-  display:block;
-}
+    display:block;
+    position:relative;
+    z-index:10001;
+  }
 
-.nav-links{
-  display:none;
-  position:absolute;
-  top:58px;
-  right:0;
-  background:#fffdf9;
-  border-radius:22px;
-  padding:14px;
-  width:210px;
-  box-shadow:0 15px 35px rgba(75,50,32,.18);
-  z-index:20;
-}
+  .nav-links{
+    display:none;
+    position:fixed;
+    top:120px;
+    right:22px;
 
-.nav-links.active{
-  display:block;
-}
+    background:#fffdf9;
+    border-radius:24px;
+    padding:16px;
+    width:220px;
 
-.nav-links a{
-  display:block;
-  margin-left:0;
-  padding:13px 10px;
-  text-align:left;
-  font-size:14px;
-  color:#2b211c;
-}
+    box-shadow:0 18px 45px rgba(75,50,32,.24);
+    z-index:10000;
+  }
+
+  .nav-links.active{
+    display:block;
+  }
+
+  .nav-links a{
+    display:block;
+    margin-left:0;
+    padding:15px 12px;
+    text-align:left;
+    font-size:15px;
+    color:#2b211c;
+    text-decoration:none;
+    border-radius:14px;
+  }
+
+  .nav-links a:hover{
+    background:#f4ece3;
+  }
 
   header::after{
   right:-260px;
