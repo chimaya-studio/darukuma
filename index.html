@@ -253,12 +253,29 @@ footer{
   padding:26px;
   font-size:13px;
 }
+.stamp-preview{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  align-items:start;
+}
+
+.stamp-preview img{
+  width:100%;
+  border-radius:18px;
+  display:block;
+  background:white;
+}
 
 @media(max-width:850px){
   .menu-button{
     display:block;
     position:relative;
     z-index:10001;
+  }
+
+  .stamp-preview{
+    grid-template-columns:1fr;
   }
 
   .nav-links{
@@ -379,8 +396,9 @@ footer{
   <h2>🐾 スタンプ一覧</h2>
   <p class="lead">大学生の日常を、ゆるくだるく表現しました。</p>
 
-  <div class="preview">
-    <img src="images/stamp-list.png" alt="だるくま。スタンプ一覧">
+  <div class="preview stamp-preview">
+    <img src="images/stamp-list-1.jpg" alt="だるくま。スタンプ一覧 前半">
+    <img src="images/stamp-list-2.jpg" alt="だるくま。スタンプ一覧 後半">
   </div>
 </section>
 
